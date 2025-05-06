@@ -4,11 +4,12 @@ module "sns" {
 }
 
 module "api_gateway" {
-  source        = "./modules/api_gateway"
-  api_name      = "DeviceNotificationsAPI"
-  sns_topic_arn = module.sns.topic_arn
-  stage_name    = "dev"
-  region        = "us-east-1"
+  source         = "./modules/api_gateway"
+  api_name       = "DeviceNotificationsAPI"
+  sns_topic_arn  = module.sns.topic_arn
+  stage_name     = "dev"
+  region         = "us-east-1"
+  apigw_role_arn = module.iam.apigw_to_sns_role_arn
 }
 
 module "sqs" {
@@ -53,4 +54,5 @@ module "lambda" {
 
 module "iam" {
   source = "./modules/iam"
+  sns_topic_arn  = module.sns.topic_arn
 }

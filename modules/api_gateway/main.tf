@@ -22,7 +22,8 @@ resource "aws_api_gateway_integration" "sns" {
   http_method             = aws_api_gateway_method.post.http_method
   type                    = "AWS"
   integration_http_method = "POST"
-  uri                     = "arn:aws:apigateway:${var.region}:sns:path//"
+  uri                     = "arn:aws:apigateway:${var.region}:sns:action/Publish"
+  credentials             = var.apigw_role_arn
 
   request_templates = {
     "application/json" = <<EOF
