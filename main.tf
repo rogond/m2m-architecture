@@ -1,6 +1,21 @@
+variable "api_name" {
+  description = "Shared name for the API Gateway and logs"
+  default     = "DeviceNotificationsAPI"
+}
+
 module "sns" {
   source     = "./modules/sns"
   topic_name = "device-notifications-topic"
+}
+
+module "cloudwatch" {
+  source           = "./modules/cloudwatch"
+  api_gateway_name = module.api_gateway.api_id
+}
+
+module "cloudwatch_logs" {
+  source   = "./modules/cloudwatch_logs"
+  api_name = var.api_name
 }
 
 module "api_gateway" {
@@ -10,6 +25,8 @@ module "api_gateway" {
   stage_name     = "dev"
   region         = "us-east-1"
   apigw_role_arn = module.iam.apigw_to_sns_role_arn
+  log_group_arn  = module.cloudwatch_logs.log_group_arn
+  logs_role_arn  = module.iam.apigw_logs_role_arn
 }
 
 module "sqs" {
@@ -53,6 +70,10 @@ module "lambda" {
 }
 
 module "iam" {
-  source = "./modules/iam"
-  sns_topic_arn  = module.sns.topic_arn
+  source        = "./modules/iam"
+  sns_topic_arn = module.sns.topic_arn
+}
+
+resource "aws_api_gateway_account" "account" {
+  cloudwatch_role_arn = module.iam.apigw_cloudwatch_role_arn
 }

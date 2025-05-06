@@ -23,4 +23,13 @@ variable "apigw_role_arn" {
   type = string
 }
 
+variable "log_group_arn" {
+  description = "ARN of the CloudWatch Log Group for API Gateway access logs"
+  type        = string
+}
+
+variable "logs_role_arn" {
+  description = "IAM role ARN for API Gateway to push logs to CloudWatch"
+  type        = string
+}
 

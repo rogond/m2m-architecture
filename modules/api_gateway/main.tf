@@ -1,3 +1,9 @@
+data "aws_caller_identity" "current" {}
+
+resource "aws_api_gateway_account" "this" {
+  cloudwatch_role_arn = var.logs_role_arn
+}
+
 resource "aws_api_gateway_rest_api" "this" {
   name        = var.api_name
   description = "API Gateway to receive device notifications"
@@ -22,7 +28,7 @@ resource "aws_api_gateway_integration" "sns" {
   http_method             = aws_api_gateway_method.post.http_method
   type                    = "AWS"
   integration_http_method = "POST"
-  uri = "arn:aws:apigateway:${var.region}:sns:path//${var.sns_topic_arn}"
+  uri = "arn:aws:apigateway:${var.region}:sns:path//"
   credentials = var.apigw_role_arn
 
   request_templates = {
@@ -63,12 +69,24 @@ resource "aws_api_gateway_deployment" "this" {
 }
 
 resource "aws_api_gateway_stage" "this" {
+ stage_name    = var.stage_name
   rest_api_id   = aws_api_gateway_rest_api.this.id
   deployment_id = aws_api_gateway_deployment.this.id
-  stage_name    = var.stage_name
 
-  variables = {
-    example_variable = "example_value"
+  access_log_settings {
+    destination_arn = "arn:aws:logs:${var.region}:${data.aws_caller_identity.current.account_id}:log-group:/aws/apigateway/${var.api_name}"
+    format = jsonencode({
+      requestId      = "$context.requestId"
+      ip             = "$context.identity.sourceIp"
+      caller         = "$context.identity.caller"
+      user           = "$context.identity.user"
+      requestTime    = "$context.requestTime"
+      httpMethod     = "$context.httpMethod"
+      resourcePath   = "$context.resourcePath"
+      status         = "$context.status"
+      protocol       = "$context.protocol"
+      responseLength = "$context.responseLength"
+    })
   }
 }
 
