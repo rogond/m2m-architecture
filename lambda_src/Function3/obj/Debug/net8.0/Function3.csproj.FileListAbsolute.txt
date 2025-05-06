@@ -1,0 +1,12 @@
+C:\Projects\m2m-architecture\lambda_src\Function3\bin\Debug\net8.0\Function3.deps.json
+C:\Projects\m2m-architecture\lambda_src\Function3\bin\Debug\net8.0\Function3.dll
+C:\Projects\m2m-architecture\lambda_src\Function3\bin\Debug\net8.0\Function3.pdb
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\Function3.csproj.AssemblyReference.cache
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\Function3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\Function3.AssemblyInfoInputs.cache
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\Function3.AssemblyInfo.cs
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\Function3.csproj.CoreCompileInputs.cache
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\Function3.dll
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\refint\Function3.dll
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\Function3.pdb
+C:\Projects\m2m-architecture\lambda_src\Function3\obj\Debug\net8.0\ref\Function3.dll

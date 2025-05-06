@@ -1,0 +1,6 @@
+C:\Projects\m2m-architecture\lambda_src\Function2\publish\Function2.dll
+C:\Projects\m2m-architecture\lambda_src\Function2\publish\Function2.deps.json
+C:\Projects\m2m-architecture\lambda_src\Function2\publish\Function2.pdb
+C:\Projects\m2m-architecture\lambda_src\Function2\publish\Amazon.Lambda.Core.dll
+C:\Projects\m2m-architecture\lambda_src\Function2\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+C:\Projects\m2m-architecture\lambda_src\Function2\publish\Amazon.Lambda.SQSEvents.dll

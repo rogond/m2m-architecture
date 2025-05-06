@@ -1,0 +1,33 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Terraform variable files (with secrets)
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Terraform plan files
+*.tfplan
+
+# Backup files
+*.bak
+
+# Local .terraform directories
+.terraform/
+
+# Override files you may want to keep locally
+terraform.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# VSCode & system files
+.vscode/
+.DS_Store
+Thumbs.db

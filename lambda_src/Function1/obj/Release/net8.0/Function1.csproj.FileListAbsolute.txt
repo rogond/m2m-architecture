@@ -1,0 +1,12 @@
+C:\Projects\m2m-architecture\lambda_src\Function1\bin\Release\net8.0\Function1.deps.json
+C:\Projects\m2m-architecture\lambda_src\Function1\bin\Release\net8.0\Function1.dll
+C:\Projects\m2m-architecture\lambda_src\Function1\bin\Release\net8.0\Function1.pdb
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\Function1.csproj.AssemblyReference.cache
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\Function1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\Function1.AssemblyInfoInputs.cache
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\Function1.AssemblyInfo.cs
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\Function1.csproj.CoreCompileInputs.cache
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\Function1.dll
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\refint\Function1.dll
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\Function1.pdb
+C:\Projects\m2m-architecture\lambda_src\Function1\obj\Release\net8.0\ref\Function1.dll
