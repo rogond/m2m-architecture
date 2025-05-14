@@ -31,3 +31,62 @@ override.tf.json
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.cache
+*.sln.ide
+*.sln.docstates
+
+# Rider and ReSharper settings
+.idea/
+*.DotSettings.user
+
+# Build results
+**/bin/
+**/obj/
+**/Build/
+**/Logs/
+**/TestResults/
+**/*.log
+**/*.tlog
+**/*.cache
+**/*.ilk
+**/*.ipch
+**/*.iobj
+**/*.pdb
+
+# NuGet generated files
+**/packages/
+!**/packages/repositories.config
+project.lock.json
+project.assets.json
+*.nupkg
+*.snupkg
+
+# Entity Framework
+**/*.edmx.diagram
+**/*.edmx.sql
+
+# Publish and deployment
+**/publish/
+**/*.deploy*
+
+# User configuration files
+**/appsettings.*.json
+**/secrets.json
+
+# Debugging files
+*.ilk
+*.pdb
+*.mdb
+*.opendb
+
+# Temporary directories and files
+**/node_modules/
+**/bower_components/
+**/.sass-cache/
+**/.vscode/
+**/dist/

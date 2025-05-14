@@ -1,6 +1,0 @@
-C:\Projects\m2m-architecture\lambda_src\Function3\publish\Function3.dll
-C:\Projects\m2m-architecture\lambda_src\Function3\publish\Function3.deps.json
-C:\Projects\m2m-architecture\lambda_src\Function3\publish\Function3.pdb
-C:\Projects\m2m-architecture\lambda_src\Function3\publish\Amazon.Lambda.Core.dll
-C:\Projects\m2m-architecture\lambda_src\Function3\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
-C:\Projects\m2m-architecture\lambda_src\Function3\publish\Amazon.Lambda.SQSEvents.dll
