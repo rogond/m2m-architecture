@@ -1,7 +1,7 @@
 Write-Host "🧼 Cleaning up previous ZIP files..."
-Remove-Item -Path "Function1.zip", "Function2.zip", "Function3.zip" -ErrorAction Ignore
+Remove-Item -Path "Function1.zip", "Function2.zip", "Function3.zip", "PublishToSns.zip" -ErrorAction Ignore
 
-$functions = @("Function1", "Function2", "Function3")
+$functions = @("Function1", "Function2", "Function3","PublishToSns")
 
 foreach ($fn in $functions) {
     $projPath = Join-Path $fn "$fn.csproj"
